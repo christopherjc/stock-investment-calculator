@@ -1,0 +1,76 @@
+.container {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: inherit; /* Inherit container background */
+    color: #000; /* Set text color */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    background-color: #157FFB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin: 20px 0px 25px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    min-height: 30px; /* Reserve space for result */
+}
+
+/* Only target autofill background color */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px inherit inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px inherit inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px inherit inset !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+/* Firefox specific */
+input:-moz-autofill {
+    box-shadow: 0 0 0px 1000px inherit inset !important;
+    color: inherit !important;
+}
