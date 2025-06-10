@@ -1,12 +1,25 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investment Calculator</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="container">
     <input type="number" id="shares" placeholder="Enter number of shares">
-    
     <input type="number" id="price" placeholder="Enter stock price" step="0.01">
 
     <div class="button-group">
-        <button onclick="calculateInvestment()">Calculate</button>
-        <button onclick="resetFields()">Reset</button>
+      <button onclick="calculateInvestment()">Calculate</button>
+      <button onclick="resetFields()">Reset</button>
     </div>
 
     <div id="result"></div>
-</div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
